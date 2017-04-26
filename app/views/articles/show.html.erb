@@ -1,0 +1,15 @@
+<h2>Showing selected article</h2>
+
+<% flash.each do |name, msg| %>
+<ul>
+  <li><%= msg %></li>
+</ul>
+<% end %>
+
+<p>
+  Title: <%= @article.title%>
+</p>
+
+<p>
+  Description: <%= @article.description%>
+</p>
