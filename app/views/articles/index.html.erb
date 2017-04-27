@@ -1,0 +1,24 @@
+<h2>List of articles</h2>
+
+<p>
+  <%= link_to "Create New Article", new_article_path %>
+</p>
+
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+    <% @articles.each do |article| %>
+    <tr>
+    <td><%= article.id %></td>
+    <td><%= article.title %></td>
+    <td><%= article.description %></td>
+    <td><%= link_to "Edit", edit_article_path(article) %></td>
+    <td><%= link_to "Show", article_path(article) %></td>
+
+    </tr>
+    <% end %>
+</table>
