@@ -1,5 +1,20 @@
-<% flash.each do |name, msg| %>
-<ul>
-  <li><%= msg %></li>
-</ul>
-<% end %>
+<div class="row">
+  <div class="col-xs-12">
+    <% flash.each do |name, msg| %>
+    <% if name == 'success' %>
+    <div class='alert alert-success'>
+      <a href="#" class="close" data-dismiss="alert">&#215;</a>
+      <p><%= msg %></p>
+    </div>
+    <% else %>
+    <div class='alert alert-danger'>
+      <a href="#" class="close" data-dismiss="alert">&#215;</a>
+      <p><%= msg %></p>
+    </div>
+
+    <% end %>
+
+    <% end %>
+
+  </div>
+</div>
