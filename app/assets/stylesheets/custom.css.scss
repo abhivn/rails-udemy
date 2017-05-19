@@ -67,7 +67,7 @@ footer ul li {
 .listing {
   list-style: none;
   padding-left: 0;
-  
+
 }
 
 .article-actions {
@@ -100,4 +100,16 @@ footer ul li {
 
 .panel-body li {
   color: #A94442;
+}
+
+.badge {
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.input_checkbox input {
+  width:auto !important;
+
 }
